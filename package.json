@@ -1,6 +1,6 @@
 {
   "name": "grab-files",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "description": "If you have a text file with a list of URLs pointing to files, this tool will download them for you.",
   "author": {
     "name": "Kamil Mielnik",
