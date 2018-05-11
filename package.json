@@ -1,28 +1,37 @@
 {
   "name": "grab-files",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "If you have a text file with a list of URLs pointing to files, this tool will download them for you.",
-  "main": "index.js",
+  "author": {
+    "name": "Kamil Mielnik",
+    "email": "kamil.adam.mielnik@gmail.com",
+    "url": "http://kamilmielnik.com/"
+  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kamilmielnik/grab-files.git"
   },
-  "keywords": [
-    "node",
-    "node.js",
-    "batch",
-    "file",
-    "download",
-    "downloader"
-  ],
-  "author": "Kamil Mielnik",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kamilmielnik/grab-files/issues"
   },
   "homepage": "https://github.com/kamilmielnik/grab-files#readme",
+  "keywords": [
+    "grab",
+    "node",
+    "node.js",
+    "file",
+    "files",
+    "download",
+    "downloader",
+    "batch"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "node ./bin/index.js --source=test/urls.txt --output=test/download"
+    "test": "node ./bin/index.js --input=test/urls.txt --output=test/download"
   },
   "bin": {
     "grab-files": "./bin/index.js"

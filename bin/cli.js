@@ -6,7 +6,7 @@ const { argv } = yargs
     alias: 'i',
     demandOption: false,
     default: 'urls.txt',
-    describe: 'input file with new-line separated urls',
+    describe: 'input file with new-line separated URLs',
     type: 'string'
   })
   .option('output', {
