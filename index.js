@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
@@ -5,17 +6,23 @@ const path = require('path');
 const url = require('url');
 
 module.exports = (options) => {
-  const download = () => downloadUrls(readUrlsFromFile(options.source));
+  const download = () => downloadUrls(readUrlsFromFile(options.input));
 
-  const downloadUrls = (urls, index = 0) => downloadFile(urls[index], index)
-    .on('response', (response) => {
+  const downloadUrls = (urls, index = 0) => {
+    console.log(`Downloading "${urls[index]}"`);
+
+    return downloadFile(urls[index], index).on('response', (response) => {
       if (response.statusCode >= 400) {
-        console.log(`Cannot download file "${urls[index]}" (index: ${index})`);
+        console.log(chalk.red(`Cannot download file "${urls[index]}" (index: ${index})`));
+      } else {
+        console.log(chalk.green(`Downloaded "${urls[index]}"`));
       }
+
       if (index + 1 < urls.length) {
         setTimeout(() => downloadUrls(urls, index + 1), options.timeout);
       }
     });
+  };
 
   const downloadFile = (fileUrl, fileIndex) => {
     createDirectoryIfNotExists(options.output);
