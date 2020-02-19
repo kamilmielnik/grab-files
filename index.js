@@ -56,11 +56,12 @@ module.exports = (options) => {
   return { download, downloadFile, downloadUrls };
 };
 
-const readUrlsFromFile = (filepath) => fs
-  .readFileSync(filepath, 'utf-8')
-  .replace(/\r/g, '')
-  .split('\n')
-  .filter(Boolean);
+const readUrlsFromFile = (filepath) =>
+  fs
+    .readFileSync(filepath, 'utf-8')
+    .replace(/\r/g, '')
+    .split('\n')
+    .filter(Boolean);
 
 const createDirectoryIfNotExists = (directory) => {
   if (!fs.existsSync(directory)) {
