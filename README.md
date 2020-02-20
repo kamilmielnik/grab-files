@@ -1,8 +1,10 @@
 # grab-files
 
-![Dependencies](https://img.shields.io/david/kamilmielnik/grab-files)
-![Node version](https://img.shields.io/node/v/grab-files)
 ![License](https://img.shields.io/npm/l/grab-files)
+![Node version](https://img.shields.io/node/v/grab-files)
+![Dependencies](https://img.shields.io/david/kamilmielnik/grab-files)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/kamilmielnik/grab-files)
+
 
 ## Description
 If you have a text file with a list of URLs pointing to files, this tool will download them for you.
@@ -16,7 +18,7 @@ If you have a text file with a list of URLs pointing to files, this tool will do
 `grab-files --input=[string] --output=[string] --timeout=[number] --preserve=[boolean]`
 
 ### Example
-`grab-files -i urls.txt`
+`grab-files -i urls.txt -o download_dir`
 
 ### Parameters
 | Name       | Alias | Default Value | Required | Example       | Description                                                           |
