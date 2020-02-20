@@ -16,7 +16,7 @@ If you have a text file with a list of URLs pointing to files, this tool will do
 `grab-files --input=[string] --output=[string] --timeout=[number] --preserve=[boolean]`
 
 ### Example
-`grab-files urls.txt`
+`grab-files -i urls.txt`
 
 ### Parameters
 | Name       | Alias | Default Value | Required | Example       | Description                                                           |
