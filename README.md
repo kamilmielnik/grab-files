@@ -4,7 +4,7 @@
 ![Node version](https://img.shields.io/node/v/grab-files)
 ![Dependencies](https://img.shields.io/david/kamilmielnik/grab-files)
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/kamilmielnik/grab-files)
-
+![Prettier](https://github.com/kamilmielnik/grab-files/workflows/Prettier/badge.svg)
 
 ## Description
 If you have a text file with a list of URLs pointing to files, this tool will download them for you.
