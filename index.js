@@ -57,11 +57,7 @@ module.exports = (options) => {
 };
 
 const readUrlsFromFile = (filepath) =>
-  fs
-    .readFileSync(filepath, 'utf-8')
-    .replace(/\r/g, '')
-    .split('\n')
-    .filter(Boolean);
+  fs.readFileSync(filepath, 'utf-8').replace(/\r/g, '').split('\n').filter(Boolean);
 
 const createDirectoryIfNotExists = (directory) => {
   if (!fs.existsSync(directory)) {
