@@ -1,9 +1,9 @@
 {
   "name": "grab-files",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "If you have a text file with a list of URLs pointing to files, this tool will download them for you.",
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "main": "index.js",
   "bin": {
@@ -39,10 +39,10 @@
     "batch"
   ],
   "dependencies": {
-    "chalk": "^3.0.0",
-    "yargs": "^15.3.0"
+    "chalk": "^4.0.0",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.2"
   }
 }
