@@ -1,6 +1,6 @@
 {
   "name": "grab-files",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "If you have a text file with a list of URLs pointing to files, this tool will download them for you.",
   "engines": {
     "node": ">=10"
