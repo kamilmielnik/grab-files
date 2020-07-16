@@ -39,10 +39,10 @@
     "batch"
   ],
   "dependencies": {
-    "chalk": "^4.0.0",
-    "yargs": "^15.3.1"
+    "chalk": "^4.1.0",
+    "yargs": "^15.4.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.5"
   }
 }
