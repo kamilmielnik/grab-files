@@ -2,6 +2,16 @@
   "name": "grab-files",
   "version": "1.1.1",
   "description": "If you have a text file with a list of URLs pointing to files, this tool will download them for you.",
+  "keywords": [
+    "grab",
+    "node",
+    "node.js",
+    "file",
+    "files",
+    "download",
+    "downloader",
+    "batch"
+  ],
   "engines": {
     "node": ">=10"
   },
@@ -23,19 +33,10 @@
     "url": "https://github.com/kamilmielnik/grab-files/issues"
   },
   "homepage": "https://github.com/kamilmielnik/grab-files#readme",
-  "keywords": [
-    "grab",
-    "node",
-    "node.js",
-    "file",
-    "files",
-    "download",
-    "downloader",
-    "batch"
-  ],
   "scripts": {
     "prettier": "prettier --list-different './**/*.js'",
     "prettier:fix": "npm run prettier -- --write --no-list-different",
+    "release": "np --no-2fa",
     "test": "node ./bin/index.js -i test/urls.txt -o test/download"
   },
   "dependencies": {
