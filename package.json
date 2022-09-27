@@ -36,7 +36,7 @@
   "scripts": {
     "prettier": "prettier --list-different './**/*.js'",
     "prettier:fix": "npm run prettier -- --write --no-list-different",
-    "release": "np --no-2fa",
+    "release": "np --no-tests",
     "test": "node ./bin/index.js -i test/urls.txt -o test/download"
   },
   "dependencies": {
