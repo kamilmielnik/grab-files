@@ -13,7 +13,7 @@
     "batch"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "main": "index.js",
   "bin": {
